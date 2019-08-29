@@ -24,14 +24,16 @@ Consume messages   : bin/kafka-console-consumer.sh --bootstrap-server localhost:
 
 
 	                                                Elastic search
+							
+							
+							Locally 
+							
+sudo /etc/init.d/elasticsearch start
+
                                                   
-
-https://www.elastic.co/guide/en/elasticsearch/reference/7.3/docker.html
-
-Elastic search (Run using docker ) ::  docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.3.1
-Or Docker ps -a , Docker start {ID}
-
-Run on Docker using docker-compose.yml  -- > docker-compose up
+							On DOCKER
+		
+Docker/docker-compose.yml  -- > docker-compose up
 
 
 
