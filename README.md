@@ -40,6 +40,37 @@ Docker/docker-compose.yml  -- > docker-compose up
 cd kibana-7.3.1-linux-x86_64/
 ./bin/kibana
 
+
+							File beat paths
+							
+Filebeat uses the following default paths unless you explicitly change them.
+
+		Home of the Filebeat installation.
+
+/usr/share/filebeat
+
+		
+		The location for the binary files.
+
+/usr/share/filebeat/bin
+
+
+		The location for configuration files.
+
+/etc/filebeat
+
+	
+		The location for persistent data files.
+
+/var/lib/filebeat
+
+		The location for the logs created by Filebeat.
+
+/var/log/filebeat
+
+
+
+
 Indices list            : curl 'localhost:9200/_cat/indices?v'
 
 Search records by index : curl 'localhost:9200/kafkadata/_search?q=*&pretty'
