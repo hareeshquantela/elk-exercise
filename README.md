@@ -38,6 +38,7 @@ Docker/docker-compose.yml  -- > docker-compose up
 							Start Kibana
 							
 cd kibana-7.3.1-linux-x86_64/
+
 ./bin/kibana
 
 
